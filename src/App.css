@@ -6,43 +6,7 @@ nav {
   background-color: #f8f3ed;
 }
 
-nav h2 {
-  color: #4b3621;
-}
 
-nav div {
-  display: flex;
-  gap: 30px;
-}
-
-nav a {
-  text-decoration: none;
-  color: #4b3621;
-}
-  #home {
-  min-height: 80vh;
-  padding: 100px 60px;
-  background-color: #f8f3ed;
-  text-align: left;
-}
-#home h1 {
-  font-size: 64px;
-  color: #4b3621;
-  margin-bottom: 20px;
-}
-
-#home h3 {
-  font-size: 24px;
-  color: #9a6b4f;
-  margin-bottom: 20px;
-}
-
-#home p {
-  font-size: 18px;
-  color: #5f5147;
-  max-width: 600px;
-  line-height: 1.7;
-}
 /* .counter {
   font-size: 16px;
   padding: 5px 10px;
