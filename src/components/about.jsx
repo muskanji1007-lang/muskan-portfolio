@@ -1,65 +1,98 @@
+import aboutImage from "../assets/about-workspace.png"
 function About() {
   return (
     <section
   id="about"
-  className="min-h-screen bg-[#fffaf5] px-6 py-20 text-center">
-      <h2 className=" text-center text-4xl font-semibold text-[#4b3621] mb-6">
-  About Me
-      </h2>
-<p className="mx-auto max-w-2xl text-center text-lg leading-8 text-[#5f5147] ">
-  I am a Computer Science and Engineering student specializing in Data Science.
-  I am interested in frontend development and enjoy creating simple,
-  user-friendly websites.
-</p>
-     <p className="mx-auto max-w-2xl text-center text-lg leading-8 text-[#5f5147]">
-  I am currently learning JavaScript and React to improve my web development
-  skills and build better projects.
-  </p>
+    className="min-h-screen bg-[#fffaf5] px-6 py-20"
+>
+   <div className="grid items-center gap-8 lg:grid-cols-[1fr_1fr_0.9fr]">
+  
+  <div>
+    <p className="mb-3 text-sm uppercase tracking-widest text-[#b87572]">
+      About Me
+    </p>
+
+    <h2 className="mb-4 text-4xl font-semibold text-[#4b3621]">
+      A little about me
+    </h2>
+
+    <div className="mb-6 h-px w-16 bg-[#b87572]"></div>
+
+    <p className="mb-4 leading-7 text-[#5f5147]">
+      I am Muskan Gupta, a Computer Science and Engineering student
+      specializing in Data Science. I am interested in frontend development
+      and enjoy creating simple, user-friendly websites.
+    </p>
+
+    <p className="leading-7 text-[#5f5147]">
+      I am currently learning JavaScript and React to improve my web
+      development skills and build better projects.
+    </p>
+
+    <p className="mt-6 font-serif italic text-[#b87572]">
+      Always learning ♡
+    </p>
+  </div>
 
   
-  <h3 className=" text-center text-2xl font-semibold text-[#4b3621] mt-10 mb-3">
-  Education
-</h3>
+  <div className="grid gap-4 sm:grid-cols-2">
 
-<p className=" text-center text-lg text-[#5f5147]">
-  Bachelor of Technology in Computer Science and Engineering (Data Science)
-</p>
-<div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+    <div className="rounded-2xl bg-[#f4e9df] p-5">
+      <h3 className="mb-2 text-lg font-semibold text-[#4b3621]">
+        Education
+      </h3>
+      <p className="text-sm leading-6 text-[#5f5147]">
+        B.Tech CSE
+        <br />
+        Data Science
+        <br />
+        AKGEC
+      </p>
+    </div>
 
-  <div className="rounded-2xl bg-[#f4e9df] p-5">
-    <h3 className="mb-2 text-lg font-semibold text-[#4b3621]">
-      Education
-    </h3>
-    <p className="text-sm text-[#5f5147]">
-      B.Tech CSE (Data Science)
-    </p>
+    <div className="rounded-2xl bg-[#f4e9df] p-5">
+      <h3 className="mb-2 text-lg font-semibold text-[#4b3621]">
+        Learning
+      </h3>
+      <p className="text-sm leading-6 text-[#5f5147]">
+        React
+        <br />
+        JavaScript
+        <br />
+        Frontend Development
+      </p>
+    </div>
+
+    <div className="rounded-2xl bg-[#f4e9df] p-5">
+      <h3 className="mb-2 text-lg font-semibold text-[#4b3621]">
+        Location
+      </h3>
+      <p className="text-sm text-[#5f5147]">
+        Chandausi.
+      </p>
+    </div>
+
+    <div className="rounded-2xl bg-[#f4e9df] p-5">
+      <h3 className="mb-2 text-lg font-semibold text-[#4b3621]">
+        Hobby
+      </h3>
+      <p className="text-sm leading-6 text-[#5f5147]">
+        Coding
+        <br />
+        Music
+        <br />
+        Exploring new technology
+      </p>
+    </div>
+
   </div>
 
-  <div className="rounded-2xl bg-[#f4e9df] p-5">
-    <h3 className="mb-2 text-lg font-semibold text-[#4b3621]">
-      Learning
-    </h3>
-    <p className="text-sm text-[#5f5147]">
-      React & JavaScript
-    </p>
-  </div>
-
-  <div className="rounded-2xl bg-[#f4e9df] p-5">
-    <h3 className="mb-2 text-lg font-semibold text-[#4b3621]">
-      Focus
-    </h3>
-    <p className="text-sm text-[#5f5147]">
-      Frontend Development
-    </p>
-  </div>
-
-  <div className="rounded-2xl bg-[#f4e9df] p-5">
-    <h3 className="mb-2 text-lg font-semibold text-[#4b3621]">
-      Interests
-    </h3>
-    <p className="text-sm text-[#5f5147]">
-      Web Design & New Technologies
-    </p>
+  <div>
+    <img
+      src={aboutImage}
+      alt="Laptop, coffee and notebook workspace"
+      className="h-full min-h-80 w-full rounded-3xl object-cover shadow-sm"
+    />
   </div>
 
 </div>
