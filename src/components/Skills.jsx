@@ -1,5 +1,5 @@
 function Skills() {
-  const skills = ["HTML", "CSS", "C", "C++", "JavaScript", "React"]
+  const skills = ["HTML", "CSS", "C", "C++", "JavaScript", "React", "tailwind css"]
 
   return (
     <section id="skills" className="bg-[#f8f3ed] px-6 py-20">
