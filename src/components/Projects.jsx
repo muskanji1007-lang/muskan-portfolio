@@ -47,7 +47,7 @@ function Projects() {
   src={project.image}
   alt={project.name}
   className="mb-5 h-44 w-full rounded-xl object-cover"/>
-        <h3 className="mb-3 text-2xl font-semibold text-[#4b3621]">
+        <h3 className="mb-3 text-2xl font-bold text-[#4b3621]">
               {project.name}
             </h3>
 

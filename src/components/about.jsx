@@ -3,8 +3,7 @@ function About() {
   return (
     <section
   id="about"
-    className="min-h-screen bg-[#fffaf5] px-6 py-20"
->
+    className="min-h-screen bg-[#fffaf5] px-6 py-20">
    <div className="grid items-center gap-8 lg:grid-cols-[1fr_1fr_0.9fr]">
   
   <div>
@@ -91,8 +90,7 @@ function About() {
     <img
       src={aboutImage}
       alt="Laptop, coffee and notebook workspace"
-      className="h-56 w-full rounded-3xl object-cover transition duration-300 hover:-translate-y-1 hover:shadow-md"
-    />
+      className="h-56 w-full rounded-3xl object-cover transition duration-300 hover:-translate-y-1 hover:shadow-md" />
   </div>
 
 </div>
