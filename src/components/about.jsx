@@ -37,7 +37,7 @@ function About() {
   
   <div className="grid gap-4 sm:grid-cols-2">
 
-    <div className="rounded-2xl bg-[#f4e9df] p-5">
+    <div className="rounded-2xl bg-[#f4e9df] p-5 transition duration-300 hover:-translate-y-1 hover:shadow-md">
       <h3 className="mb-2 text-lg font-semibold text-[#4b3621]">
         Education
       </h3>
@@ -50,7 +50,7 @@ function About() {
       </p>
     </div>
 
-    <div className="rounded-2xl bg-[#f4e9df] p-5">
+    <div className="rounded-2xl bg-[#f4e9df] p-5 transition duration-300 hover:-translate-y-1 hover:shadow-md">
       <h3 className="mb-2 text-lg font-semibold text-[#4b3621]">
         Learning
       </h3>
@@ -63,7 +63,7 @@ function About() {
       </p>
     </div>
 
-    <div className="rounded-2xl bg-[#f4e9df] p-5">
+    <div className="rounded-2xl bg-[#f4e9df] p-5 transition duration-300 hover:-translate-y-1 hover:shadow-md">
       <h3 className="mb-2 text-lg font-semibold text-[#4b3621]">
         Location
       </h3>
@@ -72,7 +72,7 @@ function About() {
       </p>
     </div>
 
-    <div className="rounded-2xl bg-[#f4e9df] p-5">
+    <div className="rounded-2xl bg-[#f4e9df] p-5 transition duration-500 hover:-translate-y-1 hover:shadow-md">
       <h3 className="mb-2 text-lg font-semibold text-[#4b3621]">
         Hobby
       </h3>
@@ -81,7 +81,7 @@ function About() {
         <br />
         Music
         <br />
-        Exploring new technology
+      Dancing
       </p>
     </div>
 
@@ -91,7 +91,7 @@ function About() {
     <img
       src={aboutImage}
       alt="Laptop, coffee and notebook workspace"
-      className="h-full min-h-80 w-full rounded-3xl object-cover shadow-sm"
+      className="h-56 w-full rounded-3xl object-cover transition duration-300 hover:-translate-y-1 hover:shadow-md"
     />
   </div>
 

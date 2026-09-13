@@ -37,25 +37,25 @@ function Projects() {
       <h2 className="mb-10 text-center text-4xl font-semibold text-[#4b3621]">
         My Projects
       </h2>
-      <h3 className="mb-2 text-center font-bold text-[#4b3621]">
+      <h3 className="mb-4 text-center font-bold text-[#4b3621]">
         Here are some of the projects I've worked on, Each project helped me learn and grow in my development journey.</h3>
 
-      <div className="mx-auto grid max-w-6xl gap-6 md:grid-cols-3">
+      <div className="mx-auto grid max-w-6xl gap-6 md:grid-cols-3 ">
         {projects.map((project) => (
           <div className="rounded-2xl bg-[#f4e9df] p-6 shadow-sm">
-            <img
+       <img
   src={project.image}
   alt={project.name}
   className="mb-5 h-44 w-full rounded-xl object-cover"/>
-            <h3 className="mb-3 text-2xl font-semibold text-[#4b3621]">
+        <h3 className="mb-3 text-2xl font-semibold text-[#4b3621]">
               {project.name}
             </h3>
 
             <p className="mb-4 text-[#5f5147]">
-              {project.description}
+          {project.description}
             </p>
 
-            <p className="text-sm text-[#8b5e52]">
+        <p className="text-sm text-[#8b5e52]">
               {project.technologies}
             </p>
             <div className="mt-5 flex gap-3">
@@ -63,8 +63,7 @@ function Projects() {
     href={project.live}
     target="_blank"
     rel="noreferrer"
-    className="rounded-full bg-[#2b2521] px-4 py-2 text-sm text-white hover:bg-[#4b3621]"
-  >
+    className="rounded-full bg-[#2b2521] px-4 py-2 text-sm text-white hover:bg-[#4b3621]">
     Live Demo
   </a>
 
@@ -72,8 +71,7 @@ function Projects() {
     href={project.github}
     target="_blank"
     rel="noreferrer"
-    className="rounded-full border border-[#8b5e52] px-4 py-2 text-sm text-[#8b5e52] hover:bg-[#f8f3ed]"
-  >
+    className="rounded-full border border-[#4b3621] px-5 py-2 text-sm text-[#4b3621] hover:bg-[#4b3621] hover:text-white">
     GitHub
   </a>
 </div>

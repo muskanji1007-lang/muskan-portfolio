@@ -1,4 +1,31 @@
+import { useState } from "react";
 function Contact() {
+  const [name, setName] = useState("")
+  const [email, setEmail] = useState("")
+  const [message, setMessage] = useState("")
+  const [status, setStatus] = useState("")
+  const [statusType, setStatusType] = useState("")
+  function handleSubmit(e) {
+  e.preventDefault()
+
+  if (name === "" || email === "" || message === "") {
+    setStatus("Please fill all fields.")
+    setStatusType("error")
+    return
+  }
+  if (!email.includes("@")) {
+  setStatus("Please enter a valid email.")
+  setStatusType("error")
+  return
+}
+
+  setStatus("Form submitted successfully!")
+  setStatusType("success")
+
+setName("")
+setEmail("")
+setMessage("")
+  }
   return (
     <section
       id="contact"
@@ -56,6 +83,64 @@ function Contact() {
 </p>
 </div>
   </div>
+    <form
+  onSubmit={handleSubmit}
+  className="rounded-3xl bg-[#fffaf5] p-6 shadow-sm">
+  <h3 className="mb-5 text-2xl font-semibold text-[#4b3621]">
+    Send a message
+  </h3>
+  <div className="mb-4">
+  <label className="mb-2 block text-sm font-medium text-[#4b3621]">
+    Name
+  </label>
+
+  <input
+    type="text"
+    placeholder="Your Name"
+    value={name}
+onChange={(e) => setName(e.target.value)}
+    className="w-full rounded-xl border border-[#d8b8ad] bg-white px-4 py-3 outline-none focus:border-[#b87572]"/>
+</div>
+<div className="mb-4">
+  <label className="mb-2 block text-sm font-medium text-[#4b3621]">
+    Email
+  </label>
+
+  <input
+    type="email"
+    placeholder="Your Email"
+    value={email}
+onChange={(e) => setEmail(e.target.value)}
+    className="w-full rounded-xl border border-[#d8b8ad] bg-white px-4 py-3 outline-none focus:border-[#b87572]"/>
+</div>
+<div className="mb-4">
+  <label className="mb-2 block text-sm font-medium text-[#4b3621]">
+    Message
+  </label>
+
+  <textarea
+    placeholder="Your Message"
+    rows="5"
+    value={message}
+onChange={(e) => setMessage(e.target.value)}
+    className="w-full rounded-xl border border-[#d8b8ad] bg-white px-4 py-3 outline-none focus:border-[#b87572]" >
+</textarea>
+</div>
+<button
+  type="submit"
+  className="w-full rounded-xl bg-[#b87572] px-4 py-3 font-semibold text-white transition hover:bg-[#9f625f]">
+  Send Message
+</button>
+{status && (
+  <p
+  className={`mt-4 text-center ${
+    statusType === "error" ? "text-red-600" : "text-green-600"
+  }`}
+>
+  {status}
+</p>
+)}
+</form>
 </div>
       </div>
     </section>

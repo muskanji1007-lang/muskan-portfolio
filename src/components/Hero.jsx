@@ -10,7 +10,7 @@ function Hero() {
         <p className="mb-1 text-lg text-[#8b5e52]">
         Hi, I'm
       </p>
-      <h1 className=" mmt-0 ,mb-4 text-5xl font-semibold text-[#1f1a17] mb-5 md:text-6xl">
+      <h1 className=" mmt-0 ,mb-4 text-5xl font-semibold text-[#1f1a17] mb-5 md:text-6xl ">
   Muskan <span className="text-[#b87572]">Gupta</span>
 </h1>
       
