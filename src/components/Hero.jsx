@@ -1,5 +1,5 @@
 import profileImage from '../assets/profile.jpg'
-function Hero() {
+export default function Hero() {
   return (
     <section id="home" className="bg-[#f8f3ed] px-6 py-20 text-left  md:py-16 ">
        <div className="mx-auto flex w-full max-w-6xl flex-col items-center justify-between gap-12 md:flex-row">
@@ -37,5 +37,3 @@ function Hero() {
     </section>
   )
 }
-
-export default Hero

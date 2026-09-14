@@ -44,6 +44,7 @@ function Projects() {
         {projects.map((project) => (
           <div className="rounded-2xl bg-[#f4e9df] p-6 shadow-sm">
        <img
+       key={project.name}
   src={project.image}
   alt={project.name}
   className="mb-5 h-44 w-full rounded-xl object-cover"/>
