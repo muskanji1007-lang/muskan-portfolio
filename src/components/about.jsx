@@ -22,7 +22,15 @@ function About() {
           </p>
 
           <p className="mb-4 leading-7 text-[#5f5147]">
-            I am currently contributing as a <strong className="font-semibold text-[#8b5e52]">Frontend Developer at Cloud Computing Cell (CCC)</strong>, AKGEC, where I work on dynamic web interfaces and learn modern development practices alongside passionate peers.
+            I am currently contributing as a Frontend Developer at{" "}
+            <a
+              href="https://www.cccakgec.com"
+              target="_blank"
+              rel="noreferrer"
+              className="font-semibold text-[#8b5e52] underline decoration-[#b87572]/40 underline-offset-4 transition hover:text-[#b87572] hover:decoration-[#b87572]">
+              Cloud Computing Cell (CCC) ↗
+            </a>
+            , AKGEC, where I work on dynamic web interfaces and learn modern development practices alongside passionate peers.
           </p>
 
           <p className="leading-7 text-[#5f5147]">
@@ -38,19 +46,29 @@ function About() {
 
         {/* Info Cards Grid */}
         <div className="grid gap-4 sm:grid-cols-2">
-          {/* Card 1: Society / Role */}
-          <div className="rounded-2xl border border-[#eedfd0]/80 bg-[#f4e9df] p-5 shadow-sm transition duration-300 hover:-translate-y-1 hover:border-[#b87572]/40 hover:shadow-md">
-            <span className="text-xl">⚡</span>
-            <h3 className="mb-1 text-base font-bold text-[#4b3621]">
+          {/* Card 1: Society / Role - Clickable */}
+          <a
+            href="https://www.cccakgec.com"
+            target="_blank"
+            rel="noreferrer"
+            title="Visit Cloud Computing Cell (CCC) website"
+            className="group block rounded-2xl border border-[#eedfd0]/80 bg-[#f4e9df] p-5 shadow-sm transition-all duration-300 hover:-translate-y-1.5 hover:border-[#b87572] hover:bg-[#fffaf5] hover:shadow-lg">
+            <div className="flex items-center justify-between">
+              <span className="text-xl">⚡</span>
+              <span className="text-xs font-semibold text-[#b87572] opacity-0 transition-opacity group-hover:opacity-100">
+                Visit cccakgec.com ↗
+              </span>
+            </div>
+            <h3 className="mb-1 text-base font-bold text-[#4b3621] transition-colors group-hover:text-[#b87572]">
               Society Member
             </h3>
             <p className="text-sm font-semibold text-[#8b5e52]">
               Cloud Computing Cell (CCC)
             </p>
-            <p className="text-xs text-[#5f5147] mt-1">
+            <p className="mt-1 text-xs text-[#5f5147]">
               Frontend Developer • AKGEC
             </p>
-          </div>
+          </a>
 
           {/* Card 2: Education */}
           <div className="rounded-2xl border border-[#eedfd0]/80 bg-[#f4e9df] p-5 shadow-sm transition duration-300 hover:-translate-y-1 hover:border-[#b87572]/40 hover:shadow-md">

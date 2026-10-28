@@ -72,11 +72,17 @@ export default function WelcomeScreen({ onComplete }) {
           <p className="text-xl font-medium text-[#4b3621] md:text-2xl">
             I'm <span className="font-semibold text-[#1f1a17]">Muskan Gupta</span>
           </p>
-          <div className="inline-flex items-center gap-2 rounded-full bg-[#f4e9df] px-4 py-1.5 text-xs font-medium text-[#8b5e52]">
+          <a
+            href="https://www.cccakgec.com"
+            target="_blank"
+            rel="noreferrer"
+            title="Visit Cloud Computing Cell official website"
+            className="group inline-flex items-center gap-2 rounded-full bg-[#f4e9df] px-4 py-1.5 text-xs font-medium text-[#8b5e52] transition hover:bg-[#eedfd0] hover:text-[#1f1a17]">
             <span>⚡ Member @ Cloud Computing Cell (CCC)</span>
+            <span className="opacity-60 transition-opacity group-hover:opacity-100">↗</span>
             <span>•</span>
             <span>Frontend Developer</span>
-          </div>
+          </a>
         </div>
 
         {/* Minimal Progress Bar */}

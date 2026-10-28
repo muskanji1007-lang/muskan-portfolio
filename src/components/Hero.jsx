@@ -6,11 +6,17 @@ export default function Hero() {
       <div className="mx-auto flex w-full max-w-6xl flex-col items-center justify-between gap-12 md:flex-row">
 
         <div className="w-full md:w-1/2">
-          {/* CCC AKGEC Badge */}
-          <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-[#eedfd0] bg-[#fffaf5] px-4 py-1.5 text-xs font-semibold text-[#8b5e52] shadow-sm">
-            <span className="flex h-2 w-2 rounded-full bg-[#b87572]" />
+          {/* CCC AKGEC Badge - Clickable to open https://www.cccakgec.com */}
+          <a
+            href="https://www.cccakgec.com"
+            target="_blank"
+            rel="noreferrer"
+            title="Visit Cloud Computing Cell official website"
+            className="group mb-4 inline-flex items-center gap-2 rounded-full border border-[#eedfd0] bg-[#fffaf5] px-4 py-1.5 text-xs font-semibold text-[#8b5e52] shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:border-[#b87572] hover:bg-[#b87572] hover:text-white hover:shadow-md">
+            <span className="flex h-2 w-2 rounded-full bg-[#b87572] group-hover:bg-white" />
             <span>Member @ Cloud Computing Cell (CCC), AKGEC</span>
-          </div>
+            <span className="opacity-70 transition-transform group-hover:translate-x-0.5 group-hover:opacity-100">↗</span>
+          </a>
 
           <p className="mb-1 text-lg font-medium text-[#8b5e52]">
             Hi, I'm
