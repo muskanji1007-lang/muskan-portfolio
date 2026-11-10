@@ -119,7 +119,7 @@ function Contact() {
 
               {/* Instagram */}
               <a
-                href="https://www.instagram.com/_.muskan_.gupta_"
+                href="https://www.instagram.com/__muskan_gupta__10"
                 target="_blank"
                 rel="noreferrer"
                 className="group flex items-center gap-3.5 rounded-2xl border border-transparent p-2.5 transition-all duration-300 hover:border-[#eedfd0] hover:bg-[#fffaf5] hover:shadow-sm">
@@ -131,7 +131,7 @@ function Contact() {
                 <div>
                   <span className="block text-xs font-semibold uppercase tracking-wider text-[#8b5e52]">Instagram</span>
                   <span className="font-medium text-[#1f1a17] transition-colors group-hover:text-[#b87572]">
-                    @_.muskan_.gupta_
+                    @__muskan_gupta__10
                   </span>
                 </div>
               </a>

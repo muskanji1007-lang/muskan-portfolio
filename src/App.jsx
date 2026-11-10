@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import About from './components/about'
@@ -12,6 +12,12 @@ import CustomCursor from "./components/CustomCursor"
 
 function App() {
   const [showWelcome, setShowWelcome] = useState(true)
+
+  useEffect(() => {
+    // Ensure clean light beige theme
+    document.documentElement.classList.remove("dark");
+    localStorage.removeItem("portfolio-theme");
+  }, []);
 
   return (
     <>
